@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Yes/No Selector",
+  "version": "1.1",
+  "description": "Auto select YES or NO on websites.",
+  "permissions": [
+    "storage",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  }
+}
